@@ -8,6 +8,12 @@
 
     <link ref="stylesheet" href="/fonts.css" />
     <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <nav class="main-nav">
@@ -41,5 +47,123 @@
         </ul>
       </div>
     </nav>
+
+    <section class="promo">
+      <div class="container">
+        <b class="promo__title">Boost up your local business</b>
+        <p class="promo__subtitle">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam
+          saepe error optio provident.
+        </p>
+
+        <form class="promo__form" method="post">
+          <p class="form__group">
+            <label class="sr-only" for="promo_name">Full Name</label>
+            <i class="fas fa-user form__icon"></i>
+            <input
+              class="form__control"
+              type="text"
+              name="promo_name"
+              id="promo_name"
+              placeholder="Full Name"
+            />
+          </p>
+          <p class="form__group">
+            <label class="sr-only" for="promo_email">Email Addres</label>
+            <i class="fas fa-user form__icon"></i>
+            <input
+              class="form__control"
+              type="text"
+              name="promo_email"
+              id="promo_email"
+              placeholder="Email Address"
+            />
+          </p>
+          <p class="form__group">
+            <label class="sr-only" for="promo_phone">Phone Number</label>
+            <i class="fas fa-user form__icon"></i>
+            <input
+              class="form__control"
+              type="text"
+              name="promo_phone"
+              id="promo_phone"
+              placeholder="Phone Number"
+            />
+          </p>
+          <button class="button form__button button_primary" type="submit">
+            Request a quote
+          </button>
+        </form>
+
+        <div class="promo__slider slider">
+          <ul class="slider__list">
+            <li class="slider__item">
+              <img src="/images/Laptop.png" alt="Laptop" />
+            </li>
+            <li class="slider__item">
+              <img src="/images/Laptop.png" alt="Laptop" />
+            </li>
+            <li class="slider__item">
+              <img src="/images/Laptop.png" alt="Laptop" />
+            </li>
+            <li class="slider__item">
+              <img src="/images/Laptop.png" alt="Laptop" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <script type="text/javascript">
+      const autoPlayTimer = 4000;
+      const sliderList = document.querySelector(".promo__slider .slider__list");
+      const slides = document.querySelectorAll(".promo__slider .slider__item");
+      console.log(slides.length);
+      sliderInit();
+
+      const autoPlay = setInterval(() => {
+        const prev = getActiveSlide();
+        const nextSlideNumber = (+prev.dataset.slide + 1) % slides.length;
+        changeSlide(nextSlideNumber);
+      }, autoPlayTimer);
+
+      function getActiveSlide() {
+        return document.querySelector(
+          ".promo__slider .slider__indicator_active"
+        );
+      }
+
+      function changeSlide(number) {
+        sliderList.style.left = `-${number * 100}%`;
+        const prevInd = getActiveSlide();
+        const nextInd = document.querySelector(
+          ".promo__slider .slider__indicator[data-slide='" + number + "']"
+        );
+        nextInd.classList.add("slider__indicator_active");
+        prevInd.classList.remove("slider__indicator_active");
+      }
+
+      function sliderInit() {
+        const sliderIndicators = document.createElement("ul");
+        sliderIndicators.classList.add("slider__indicators");
+        let slidesCounter = 0;
+        for (let slide of slides) {
+          const sliderIndicator = document.createElement("li");
+          sliderIndicator.className = `slider__indicator ${
+            slidesCounter === 0 ? "slider__indicator_active" : ""
+          }`;
+          sliderIndicator.dataset.slide = slidesCounter;
+          sliderIndicator.addEventListener("click", (event) => {
+            const num = event.target.dataset.slide;
+            changeSlide(num);
+            clearInterval(autoPlay);
+          });
+          sliderIndicators.append(sliderIndicator);
+
+          slidesCounter++;
+        }
+        sliderList.after(sliderIndicators);
+      }
+    </script>
   </body>
 </html>
