@@ -1,7 +1,8 @@
 :root {
   box-sizing: border-box;
-  font-size: 13px;
   font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  line-height: 1.84615;
 
   --primary-color: #ffbb42;
   --secondary-color: #709dca;
@@ -255,6 +256,41 @@ body {
   color: var(--secondary-color);
 }
 
+/* About section */
+.about {
+  position: relative;
+  background-color: var(--primary-color);
+  color: var(--white-font-color);
+}
+
+.about,
+.about__title {
+  text-align: left;
+}
+
+.about__cover {
+  display: block;
+  margin-left: auto;
+  margin-right: 50%;
+  max-width: 50%;
+}
+
+.about__body {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  overflow: auto;
+  left: 50%;
+  max-width: 45em;
+  padding-top: 12.3077em;
+  padding-left: 6.1538em;
+}
+
+.about__button {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 /* Utils */
 .sr-only {
   display: block;
@@ -267,16 +303,22 @@ body {
 }
 
 .button {
+  display: inline-block;
   padding: 16px 20px;
-  display: block;
   border: initial;
-  text-transform: uppercase;
   border-radius: var(--common-border-radius);
   cursor: pointer;
   white-space: nowrap;
+  color: inherit;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 .button_primary {
   color: var(--white-font-color);
   background-color: var(--primary-color);
+}
+
+.button_outline {
+  border: 1px solid #e7ad48;
 }
