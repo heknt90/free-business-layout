@@ -15,7 +15,7 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
+  <body class="page-wrap" id="page-top">
     <nav class="main-nav">
       <div class="container main-nav__wrap">
         <a href="/">
@@ -24,7 +24,7 @@
 
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item_active">
-            <a href="/" class="main-nav__link">Home</a>
+            <a href="#page-top" class="main-nav__link">Home</a>
           </li>
           <li class="main-nav__item">
             <a href="#services" class="main-nav__link">Service</a>
@@ -47,417 +47,473 @@
         </ul>
       </div>
     </nav>
+    <main>
+      <section class="promo">
+        <div class="container">
+          <b class="promo__title">Boost up your local business</b>
+          <p class="promo__subtitle">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam
+            saepe error optio provident.
+          </p>
 
-    <section class="promo">
+          <form class="promo__form form form_horizontal" method="post">
+            <p class="form__group">
+              <label class="sr-only" for="promo_name">Full Name</label>
+              <i class="fas fa-user form__icon"></i>
+              <input
+                class="form__control"
+                type="text"
+                name="promo_name"
+                id="promo_name"
+                placeholder="Full Name"
+              />
+            </p>
+            <p class="form__group">
+              <label class="sr-only" for="promo_email">Email Addres</label>
+              <i class="fas fa-user form__icon"></i>
+              <input
+                class="form__control"
+                type="text"
+                name="promo_email"
+                id="promo_email"
+                placeholder="Email Address"
+              />
+            </p>
+            <p class="form__group">
+              <label class="sr-only" for="promo_phone">Phone Number</label>
+              <i class="fas fa-user form__icon"></i>
+              <input
+                class="form__control"
+                type="text"
+                name="promo_phone"
+                id="promo_phone"
+                placeholder="Phone Number"
+              />
+            </p>
+            <button class="button form__button button_primary" type="submit">
+              Request a quote
+            </button>
+          </form>
+
+          <div class="promo__slider slider">
+            <ul class="slider__list">
+              <li class="slider__item">
+                <img src="/images/Laptop.png" alt="Laptop" />
+              </li>
+              <li class="slider__item">
+                <img src="/images/Laptop.png" alt="Laptop" />
+              </li>
+              <li class="slider__item">
+                <img src="/images/Laptop.png" alt="Laptop" />
+              </li>
+              <li class="slider__item">
+                <img src="/images/Laptop.png" alt="Laptop" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       <div class="container">
-        <b class="promo__title">Boost up your local business</b>
-        <p class="promo__subtitle">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam
-          saepe error optio provident.
-        </p>
+        <section class="services" id="services">
+          <h2 class="heading">Our Services</h2>
+          <p class="subtitle">
+            Lorem, ipsum dolor sit amet consectetur adipisicing.
+          </p>
 
-        <form class="promo__form form form_horizontal" method="post">
-          <p class="form__group">
-            <label class="sr-only" for="promo_name">Full Name</label>
-            <i class="fas fa-user form__icon"></i>
-            <input
-              class="form__control"
-              type="text"
-              name="promo_name"
-              id="promo_name"
-              placeholder="Full Name"
-            />
-          </p>
-          <p class="form__group">
-            <label class="sr-only" for="promo_email">Email Addres</label>
-            <i class="fas fa-user form__icon"></i>
-            <input
-              class="form__control"
-              type="text"
-              name="promo_email"
-              id="promo_email"
-              placeholder="Email Address"
-            />
-          </p>
-          <p class="form__group">
-            <label class="sr-only" for="promo_phone">Phone Number</label>
-            <i class="fas fa-user form__icon"></i>
-            <input
-              class="form__control"
-              type="text"
-              name="promo_phone"
-              id="promo_phone"
-              placeholder="Phone Number"
-            />
-          </p>
-          <button class="button form__button button_primary" type="submit">
-            Request a quote
-          </button>
-        </form>
+          <ul class="services__list">
+            <li class="services__item services__item_highlight">
+              <i class="far fa-clock services__icon"></i>
+              <h3 class="services__name">Font-awesome icons</h3>
+              <p class="services__desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quibusdam numquam saepe deleniti assumenda consequuntur neque
+                reprehenderit aut qui officiis totam explicabo ut blanditiis
+                quis maiores, magni exercitationem.
+              </p>
+            </li>
+            <li class="services__item">
+              <i class="fas fa-cog services__icon"></i>
+              <h3 class="services__name">Fully Responsive Design</h3>
+              <p class="services__desc">
+                Officia iste fugiat quo, deleniti, provident aspernatur
+                voluptatum labore ullam corporis vitae, enim aliquid debitis
+                neque deserunt exercitationem soluta. Voluptate mollitia quis
+                necessitatibus optio similique, facere qui?
+              </p>
+            </li>
+            <li class="services__item">
+              <i class="fas fa-graduation-cap services__icon"></i>
+              <h3 class="services__name">Working Contact form</h3>
+              <p class="services__desc">
+                Debitis unde in recusandae praesentium, accusamus sed nulla
+                esse! Quae aut, beatae voluptatem unde esse quasi omnis eligendi
+                facere vel nesciunt laboriosam. Quo nemo dolor perspiciatis!
+                Nihil!
+              </p>
+            </li>
+            <li class="services__item">
+              <i class="fas fa-rocket services__icon"></i>
+              <h3 class="services__name">Retina Ready icons here</h3>
+              <p class="services__desc">
+                Est quisquam optio dolores ad perspiciatis dolorum tempora
+                cupiditate, suscipit similique, itaque hic officiis iste enim
+                reprehenderit nam, ex magni dignissimos praesentium maiores
+                voluptate alias aspernatur odio?
+              </p>
+            </li>
+            <li class="services__item">
+              <i class="fas fa-chart-pie services__icon"></i>
+              <h3 class="services__name">Friendly Code</h3>
+              <p class="services__desc">
+                Sed sequi voluptas, laborum amet architecto ipsa veniam
+                consequatur nihil ab, illum libero ea harum quod velit?
+                Reiciendis totam suscipit neque inventore accusamus quia minus,
+                amet voluptatibus.
+              </p>
+            </li>
+            <li class="services__item">
+              <i class="fas fa-dollar-sign services__icon"></i>
+              <h3 class="services__name">Flat trendy landing page Design</h3>
+              <p class="services__desc">
+                Expedita fugiat voluptatibus quae. Accusantium deleniti officiis
+                eos dolorem culpa maiores alias, fugit excepturi ipsa ab quam
+                iste placeat molestias est corporis, autem nesciunt soluta nobis
+                quis.
+              </p>
+            </li>
+          </ul>
+        </section>
+      </div>
 
-        <div class="promo__slider slider">
-          <ul class="slider__list">
-            <li class="slider__item">
-              <img src="/images/Laptop.png" alt="Laptop" />
+      <section class="about" id="about-us">
+        <img class="about__cover" src="/images/about.jpg" alt="" />
+        <div class="about__body">
+          <h2 class="about__title heading">About us</h2>
+          <p class="about text">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the ore
+            recently with desktop publishing software like Aldus PageMaker
+            including versions of Lorem Ipsum
+          </p>
+          <a href="/about" class="button button_outline about__button"
+            >Read more</a
+          >
+        </div>
+      </section>
+
+      <section class="prices">
+        <div class="container">
+          <h2 class="heading" id="pricing">Choose your price</h2>
+          <p class="subtitle">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis,
+            eos?
+          </p>
+
+          <ul class="prices__list">
+            <li class="prices__item price-card">
+              <h4 class="price-card__title">Basic plan</h4>
+              <p class="price-card__cost">
+                <sup class="price-card__currency"> $ </sup>
+                22
+                <span class="price-card__frequency">per month</span>
+              </p>
+              <ul class="price-card__adventages">
+                <li class="price-card__adventage">1 Account</li>
+                <li class="price-card__adventage">8 hour support</li>
+                <li class="price-card__adventage">Custom Cloud Services</li>
+              </ul>
+              <a href="/prices/basic" class="button button_primary"
+                >Get started</a
+              >
             </li>
-            <li class="slider__item">
-              <img src="/images/Laptop.png" alt="Laptop" />
+            <li class="prices__item price-card price-card_highlight">
+              <h4 class="price-card__title">Premium plan</h4>
+              <p class="price-card__cost">
+                <sup class="price-card__currency"> $ </sup>
+                42
+                <span class="price-card__frequency">per month</span>
+              </p>
+              <ul class="price-card__adventages">
+                <li class="price-card__adventage">2 Account</li>
+                <li class="price-card__adventage">100MB Storage</li>
+                <li class="price-card__adventage">Custom Cloud Services</li>
+              </ul>
+              <a href="/prices/basic" class="button button_primary"
+                >Get started</a
+              >
             </li>
-            <li class="slider__item">
-              <img src="/images/Laptop.png" alt="Laptop" />
-            </li>
-            <li class="slider__item">
-              <img src="/images/Laptop.png" alt="Laptop" />
+            <li class="prices__item price-card">
+              <h4 class="price-card__title">Gold plan</h4>
+              <p class="price-card__cost">
+                <sup class="price-card__currency"> $ </sup>
+                62
+                <span class="price-card__frequency">per month</span>
+              </p>
+              <ul class="price-card__adventages">
+                <li class="price-card__adventage">8 Account</li>
+                <li class="price-card__adventage">24 hour support</li>
+                <li class="price-card__adventage">Custom Cloud Services</li>
+              </ul>
+              <a href="/prices/basic" class="button button_primary"
+                >Get started</a
+              >
             </li>
           </ul>
         </div>
-      </div>
-    </section>
-
-    <div class="container">
-      <section class="services" id="services">
-        <h2 class="heading">Our Services</h2>
-        <p class="subtitle">
-          Lorem, ipsum dolor sit amet consectetur adipisicing.
-        </p>
-
-        <ul class="services__list">
-          <li class="services__item services__item_highlight">
-            <i class="far fa-clock services__icon"></i>
-            <h3 class="services__name">Font-awesome icons</h3>
-            <p class="services__desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-              numquam saepe deleniti assumenda consequuntur neque reprehenderit
-              aut qui officiis totam explicabo ut blanditiis quis maiores, magni
-              exercitationem.
-            </p>
-          </li>
-          <li class="services__item">
-            <i class="fas fa-cog services__icon"></i>
-            <h3 class="services__name">Fully Responsive Design</h3>
-            <p class="services__desc">
-              Officia iste fugiat quo, deleniti, provident aspernatur voluptatum
-              labore ullam corporis vitae, enim aliquid debitis neque deserunt
-              exercitationem soluta. Voluptate mollitia quis necessitatibus
-              optio similique, facere qui?
-            </p>
-          </li>
-          <li class="services__item">
-            <i class="fas fa-graduation-cap services__icon"></i>
-            <h3 class="services__name">Working Contact form</h3>
-            <p class="services__desc">
-              Debitis unde in recusandae praesentium, accusamus sed nulla esse!
-              Quae aut, beatae voluptatem unde esse quasi omnis eligendi facere
-              vel nesciunt laboriosam. Quo nemo dolor perspiciatis! Nihil!
-            </p>
-          </li>
-          <li class="services__item">
-            <i class="fas fa-rocket services__icon"></i>
-            <h3 class="services__name">Retina Ready icons here</h3>
-            <p class="services__desc">
-              Est quisquam optio dolores ad perspiciatis dolorum tempora
-              cupiditate, suscipit similique, itaque hic officiis iste enim
-              reprehenderit nam, ex magni dignissimos praesentium maiores
-              voluptate alias aspernatur odio?
-            </p>
-          </li>
-          <li class="services__item">
-            <i class="fas fa-chart-pie services__icon"></i>
-            <h3 class="services__name">Friendly Code</h3>
-            <p class="services__desc">
-              Sed sequi voluptas, laborum amet architecto ipsa veniam
-              consequatur nihil ab, illum libero ea harum quod velit? Reiciendis
-              totam suscipit neque inventore accusamus quia minus, amet
-              voluptatibus.
-            </p>
-          </li>
-          <li class="services__item">
-            <i class="fas fa-dollar-sign services__icon"></i>
-            <h3 class="services__name">Flat trendy landing page Design</h3>
-            <p class="services__desc">
-              Expedita fugiat voluptatibus quae. Accusantium deleniti officiis
-              eos dolorem culpa maiores alias, fugit excepturi ipsa ab quam iste
-              placeat molestias est corporis, autem nesciunt soluta nobis quis.
-            </p>
-          </li>
-        </ul>
       </section>
-    </div>
 
-    <section class="about" id="about-us">
-      <img class="about__cover" src="/images/about.jpg" alt="" />
-      <div class="about__body">
-        <h2 class="about__title heading">About us</h2>
-        <p class="about text">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the ore
-          recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum
-        </p>
-        <a href="/about" class="button button_outline about__button"
-          >Read more</a
-        >
-      </div>
-    </section>
-
-    <section class="prices">
-      <div class="container">
-        <h2 class="heading" id="pricing">Choose your price</h2>
-        <p class="subtitle">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis,
-          eos?
-        </p>
-
-        <ul class="prices__list">
-          <li class="prices__item price-card">
-            <h4 class="price-card__title">Basic plan</h4>
-            <p class="price-card__cost">
-              <sup class="price-card__currency">
-                <!-- <i class="fas fa-dollar-sign"></i> -->
-                $
-              </sup>
-              22
-              <span class="price-card__frequency">per month</span>
-            </p>
-            <ul class="price-card__adventages">
-              <li class="price-card__adventage">1 Account</li>
-              <li class="price-card__adventage">8 hour support</li>
-              <li class="price-card__adventage">Custom Cloud Services</li>
-            </ul>
-            <a href="/prices/basic" class="button button_primary"
-              >Get started</a
-            >
-          </li>
-          <li class="prices__item price-card price-card_highlight">
-            <h4 class="price-card__title">Premium plan</h4>
-            <p class="price-card__cost">
-              <sup class="price-card__currency">
-                <!-- <i class="fas fa-dollar-sign"></i> -->
-                $
-              </sup>
-              42
-              <span class="price-card__frequency">per month</span>
-            </p>
-            <ul class="price-card__adventages">
-              <li class="price-card__adventage">2 Account</li>
-              <li class="price-card__adventage">100MB Storage</li>
-              <li class="price-card__adventage">Custom Cloud Services</li>
-            </ul>
-            <a href="/prices/basic" class="button button_primary"
-              >Get started</a
-            >
-          </li>
-          <li class="prices__item price-card">
-            <h4 class="price-card__title">Gold plan</h4>
-            <p class="price-card__cost">
-              <sup class="price-card__currency">
-                <!-- <i class="fas fa-dollar-sign"></i> -->
-                $
-              </sup>
-              62
-              <span class="price-card__frequency">per month</span>
-            </p>
-            <ul class="price-card__adventages">
-              <li class="price-card__adventage">8 Account</li>
-              <li class="price-card__adventage">24 hour support</li>
-              <li class="price-card__adventage">Custom Cloud Services</li>
-            </ul>
-            <a href="/prices/basic" class="button button_primary"
-              >Get started</a
-            >
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="instructions">
-      <div class="container">
-        <h2 class="heading" id="how-it-work">How it works</h2>
-        <p class="subtitle">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam,
-          totam.
-        </p>
-
-        <ul class="instructions__steps stepper">
-          <li class="stepper__item">
-            <span class="stepper__icon">
-              <i class="fas fa-headphones"></i>
-            </span>
-            <h4>Step 1</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
-              molestias voluptatum perferendis suscipit totam esse possimus
-              vitae aliquid corrupti dolorum.
-            </p>
-          </li>
-          <li class="stepper__item">
-            <span class="stepper__icon">
-              <i class="fas fa-unlock"></i>
-            </span>
-            <h4>Step 2</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
-              molestias voluptatum perferendis suscipit totam esse possimus
-              vitae aliquid corrupti dolorum.
-            </p>
-          </li>
-          <li class="stepper__item">
-            <span class="stepper__icon">
-              <i class="fas fa-cloud-upload-alt"></i>
-            </span>
-            <h4>Step 3</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
-              molestias voluptatum perferendis suscipit totam esse possimus
-              vitae aliquid corrupti dolorum.
-            </p>
-          </li>
-          <li class="stepper__item">
-            <span class="stepper__icon">
-              <i class="far fa-thumbs-up"></i>
-            </span>
-            <h4>Step 4</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
-              molestias voluptatum perferendis suscipit totam esse possimus
-              vitae aliquid corrupti dolorum.
-            </p>
-          </li>
-        </ul>
-        <a href="#" class="button button_primary">Get Start Now</a>
-      </div>
-    </section>
-
-    <section class="clients">
-      <div class="container">
-        <h2 class="heading" id="clients">Happy clients</h2>
-        <p class="subtitle">
-          We are explain who is using our business solutions
-        </p>
-
-        <ul class="clients__list">
-          <li class="clients__item feedback">
-            <div class="feedback__photo">
-              <img src="/images/client1.jpg" alt="" class="feedback__image" />
-            </div>
-            <blockquote class="feedback__content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-              laudantium harum magni quis, laboriosam illo nam veritatis
-              voluptates neque distinctio nobis amet! Nesciunt facere eligendi
-              beatae deleniti qui nam necessitatibus, nobis eos officiis,
-              commodi veritatis ullam a sequi aut reiciendis. Reprehenderit
-              minus perferendis mollitia laboriosam.
-            </blockquote>
-            <p class="feedback__author">
-              <span class="feedback__author-name"> Darwin Michle, </span>
-              Project manager
-            </p>
-          </li>
-
-          <li class="clients__item feedback">
-            <div class="feedback__photo">
-              <img src="/images/client2.jpg" alt="" class="feedback__image" />
-            </div>
-            <blockquote class="feedback__content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-              laudantium harum magni quis, laboriosam illo nam veritatis
-              voluptates neque distinctio nobis amet! Nesciunt facere eligendi
-              beatae deleniti qui nam necessitatibus, nobis eos officiis,
-              commodi veritatis ullam a sequi aut reiciendis. Reprehenderit
-              minus perferendis mollitia laboriosam.
-            </blockquote>
-            <p class="feedback__author">
-              <span class="feedback__author-name"> Madam Elisabath, </span>
-              Creative Director
-            </p>
-          </li>
-
-          <li class="clients__item feedback">
-            <div class="feedback__photo">
-              <img src="/images/client3.jpg" alt="" class="feedback__image" />
-            </div>
-            <blockquote class="feedback__content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-              laudantium harum magni quis, laboriosam illo nam veritatis
-              voluptates neque distinctio nobis amet! Nesciunt facere eligendi
-              beatae deleniti qui nam necessitatibus, nobis eos officiis,
-              commodi veritatis ullam a sequi aut reiciendis. Reprehenderit
-              minus perferendis mollitia laboriosam.
-            </blockquote>
-            <p class="feedback__author">
-              <span class="feedback__author-name"> Clips Arter, </span> Lipsum
-              directer
-            </p>
-          </li>
-
-          <li class="clients__item feedback">
-            <div class="feedback__photo">
-              <img src="/images/client4.jpg" alt="" class="feedback__image" />
-            </div>
-            <blockquote class="feedback__content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-              laudantium harum magni quis, laboriosam illo nam veritatis
-              voluptates neque distinctio nobis amet! Nesciunt facere eligendi
-              beatae deleniti qui nam necessitatibus, nobis eos officiis,
-              commodi veritatis ullam a sequi aut reiciendis. Reprehenderit
-              minus perferendis mollitia laboriosam.
-            </blockquote>
-            <p class="feedback__author">
-              <span class="feedback__author-name"> Zam Cristafr, </span>
-              Manager
-            </p>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="contacts">
-      <div class="container">
-        <h2 class="heading" id="contacts">Newsletter</h2>
-        <p class="subtitle">
-          Lorem ipsum dolor sit amet, consectetur adipisicing.
-        </p>
-        <form method="post" class="contacts__form form form_horizontal">
-          <p class="form__group">
-            <label class="sr-only" for="contacts__name">Name</label>
-            <i class="fas fa-user form__icon"></i>
-            <input
-              class="form__control form__control_bordered"
-              type="text"
-              name="contacts__name"
-              id="contacts__name"
-              placeholder="Name"
-            />
+      <section class="instructions">
+        <div class="container">
+          <h2 class="heading" id="how-it-work">How it works</h2>
+          <p class="subtitle">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam,
+            totam.
           </p>
-          <p class="form__group">
-            <label class="sr-only" for="contacts__email">Email Address</label>
-            <i class="fas fa-user form__icon"></i>
-            <input
-              class="form__control form__control_bordered"
-              type="text"
-              name="contacts__email"
-              id="contacts__email"
-              placeholder="Email Address"
-            />
-          </p>
-          <button class="form__button button button_primary" type="submit">
-            Subscribe now
-          </button>
-        </form>
-        <div class="contacts__content">
-          <h4 class="contacts__title">Address</h4>
-          <p class="contacts__address">
-            Business street Second north section Bavani nagar. 88769
-            <span class="contacts__phone"> Call : +987-9976-999 </span>
-            <span class="contacts__email"> info@businessface.com </span>
-          </p>
+
+          <ul class="instructions__steps stepper">
+            <li class="stepper__item">
+              <span class="stepper__icon">
+                <i class="fas fa-headphones"></i>
+              </span>
+              <h4>Step 1</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+                molestias voluptatum perferendis suscipit totam esse possimus
+                vitae aliquid corrupti dolorum.
+              </p>
+            </li>
+            <li class="stepper__item">
+              <span class="stepper__icon">
+                <i class="fas fa-unlock"></i>
+              </span>
+              <h4>Step 2</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+                molestias voluptatum perferendis suscipit totam esse possimus
+                vitae aliquid corrupti dolorum.
+              </p>
+            </li>
+            <li class="stepper__item">
+              <span class="stepper__icon">
+                <i class="fas fa-cloud-upload-alt"></i>
+              </span>
+              <h4>Step 3</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+                molestias voluptatum perferendis suscipit totam esse possimus
+                vitae aliquid corrupti dolorum.
+              </p>
+            </li>
+            <li class="stepper__item">
+              <span class="stepper__icon">
+                <i class="far fa-thumbs-up"></i>
+              </span>
+              <h4>Step 4</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+                molestias voluptatum perferendis suscipit totam esse possimus
+                vitae aliquid corrupti dolorum.
+              </p>
+            </li>
+          </ul>
+          <a href="#" class="button button_primary">Get Start Now</a>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <section class="clients">
+        <div class="container">
+          <h2 class="heading" id="clients">Happy clients</h2>
+          <p class="subtitle">
+            We are explain who is using our business solutions
+          </p>
+
+          <ul class="clients__list">
+            <li class="clients__item feedback">
+              <div class="feedback__photo">
+                <img src="/images/client1.jpg" alt="" class="feedback__image" />
+              </div>
+              <blockquote class="feedback__content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+                laudantium harum magni quis, laboriosam illo nam veritatis
+                voluptates neque distinctio nobis amet! Nesciunt facere eligendi
+                beatae deleniti qui nam necessitatibus, nobis eos officiis,
+                commodi veritatis ullam a sequi aut reiciendis. Reprehenderit
+                minus perferendis mollitia laboriosam.
+              </blockquote>
+              <p class="feedback__author">
+                <span class="feedback__author-name"> Darwin Michle, </span>
+                Project manager
+              </p>
+            </li>
+
+            <li class="clients__item feedback">
+              <div class="feedback__photo">
+                <img src="/images/client2.jpg" alt="" class="feedback__image" />
+              </div>
+              <blockquote class="feedback__content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+                laudantium harum magni quis, laboriosam illo nam veritatis
+                voluptates neque distinctio nobis amet! Nesciunt facere eligendi
+                beatae deleniti qui nam necessitatibus, nobis eos officiis,
+                commodi veritatis ullam a sequi aut reiciendis. Reprehenderit
+                minus perferendis mollitia laboriosam.
+              </blockquote>
+              <p class="feedback__author">
+                <span class="feedback__author-name"> Madam Elisabath, </span>
+                Creative Director
+              </p>
+            </li>
+
+            <li class="clients__item feedback">
+              <div class="feedback__photo">
+                <img src="/images/client3.jpg" alt="" class="feedback__image" />
+              </div>
+              <blockquote class="feedback__content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+                laudantium harum magni quis, laboriosam illo nam veritatis
+                voluptates neque distinctio nobis amet! Nesciunt facere eligendi
+                beatae deleniti qui nam necessitatibus, nobis eos officiis,
+                commodi veritatis ullam a sequi aut reiciendis. Reprehenderit
+                minus perferendis mollitia laboriosam.
+              </blockquote>
+              <p class="feedback__author">
+                <span class="feedback__author-name"> Clips Arter, </span> Lipsum
+                directer
+              </p>
+            </li>
+
+            <li class="clients__item feedback">
+              <div class="feedback__photo">
+                <img src="/images/client4.jpg" alt="" class="feedback__image" />
+              </div>
+              <blockquote class="feedback__content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+                laudantium harum magni quis, laboriosam illo nam veritatis
+                voluptates neque distinctio nobis amet! Nesciunt facere eligendi
+                beatae deleniti qui nam necessitatibus, nobis eos officiis,
+                commodi veritatis ullam a sequi aut reiciendis. Reprehenderit
+                minus perferendis mollitia laboriosam.
+              </blockquote>
+              <p class="feedback__author">
+                <span class="feedback__author-name"> Zam Cristafr, </span>
+                Manager
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="contacts">
+        <div class="container">
+          <h2 class="heading" id="contacts">Newsletter</h2>
+          <p class="subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipisicing.
+          </p>
+          <form method="post" class="contacts__form form form_horizontal">
+            <p class="form__group">
+              <label class="sr-only" for="contacts__name">Name</label>
+              <i class="fas fa-user form__icon"></i>
+              <input
+                class="form__control form__control_bordered"
+                type="text"
+                name="contacts__name"
+                id="contacts__name"
+                placeholder="Name"
+              />
+            </p>
+            <p class="form__group">
+              <label class="sr-only" for="contacts__email">Email Address</label>
+              <i class="fas fa-user form__icon"></i>
+              <input
+                class="form__control form__control_bordered"
+                type="text"
+                name="contacts__email"
+                id="contacts__email"
+                placeholder="Email Address"
+              />
+            </p>
+            <button class="form__button button button_primary" type="submit">
+              Subscribe now
+            </button>
+          </form>
+          <div class="contacts__content">
+            <h4 class="contacts__title">Address</h4>
+            <p class="contacts__address">
+              Business street Second north section Bavani nagar. 88769
+              <span class="contacts__phone"> Call : +987-9976-999 </span>
+              <span class="contacts__email"> info@businessface.com </span>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <ul class="footer-nav__list">
+        <li class="footer-nav__item">
+          <a href="#page-top" class="footer-nav__link">Home</a>
+        </li>
+        <li class="footer-nav__item">
+          <a href="#services" class="footer-nav__link">Service</a>
+        </li>
+        <li class="footer-nav__item">
+          <a href="#about-us" class="footer-nav__link">About us</a>
+        </li>
+        <li class="footer-nav__item">
+          <a href="#pricing" class="footer-nav__link">Pricing table</a>
+        </li>
+        <li class="footer-nav__item">
+          <a href="#how-it-work" class="footer-nav__link">How it work</a>
+        </li>
+        <li class="footer-nav__item">
+          <a href="#clients" class="footer-nav__link">Happy clients</a>
+        </li>
+        <li class="footer-nav__item">
+          <a href="#contacts" class="footer-nav__link">Contacts us</a>
+        </li>
+      </ul>
+
+      <p class="footer__phone">
+        <i class="fas fa-phone-alt"></i>
+        +987 9976 999
+      </p>
+      <ul class="social__list">
+        <li class="social__item social__item_highlight">
+          <a class="social__link" href="#">
+            <i class="fab fa-twitter"></i>
+            <span class="sr-only">twitter</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <i class="fab fa-facebook-f"></i>
+            <span class="sr-only">facebook</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <i class="fab fa-google-plus-g"></i>
+            <span class="sr-only">Google+</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <i class="fab fa-linkedin-in"></i>
+            <span class="sr-only">Linkedin</span>
+          </a>
+        </li>
+      </ul>
+
+      <p class="footer__copyright">
+        All contents © copyright 2014 Business Theme. All rights reserved
+        Designed by : akhilwebfolio
+      </p>
+    </footer>
 
     <!-- Scripts -->
     <script type="text/javascript">
