@@ -386,6 +386,50 @@ body {
   border-top: var(--simple-background-color) 1px solid;
 }
 
+/* Instructions section */
+.instructions {
+  padding: 150px 0;
+  text-align: center;
+}
+
+.instructions__steps {
+  margin-top: 110px;
+}
+
+/* Stepper */
+.stepper {
+  display: flex;
+  /* margin: 0; */
+  padding: 0 30px;
+  list-style-type: none;
+  margin-bottom: 95px;
+}
+
+.stepper__item {
+  position: relative;
+}
+
+.stepper__item + .stepper__item {
+  margin-left: 90px;
+}
+
+.stepper__item + .stepper__item::before {
+  content: " ";
+  display: block;
+  border-top: 2px dotted var(--secondary-color);
+  position: absolute;
+  left: -110px;
+  width: 130px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.stepper__icon {
+  font-size: 72px;
+  color: var(--secondary-color);
+  margin-bottom: 95px;
+}
+
 /* Utils */
 .sr-only {
   display: block;
