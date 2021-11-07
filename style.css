@@ -508,9 +508,9 @@ body {
 /* Contacts section */
 
 .contacts {
-  padding: 154px 0;
-  background-image: url("/images/map.jpg");
-  background-position: center 340px;
+  padding: 154px 0 286px;
+  background-image: url("/images/logo.png"), url("/images/map.jpg");
+  background-position: center 680px, center 340px;
   background-repeat: no-repeat;
 }
 
@@ -519,6 +519,7 @@ body {
 }
 
 .contacts__content {
+  position: relative;
   background-color: var(--additional-font-color);
   width: 280px;
   height: 280px;
@@ -532,6 +533,18 @@ body {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.contacts__content::after {
+  content: " ";
+  position: absolute;
+  bottom: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border: 7px solid transparent;
+  border-top: 14px solid var(--additional-font-color);
 }
 
 .contacts__title {
