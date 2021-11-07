@@ -11,6 +11,7 @@
   --form-font-color: #a9a9a9;
   --white-font-color: #fff;
   --menu-font-color: #868686;
+  --simple-background-color: #e7edf3;
 
   --font-family-1: Lato;
   --font-family-2: "Gotham Black";
@@ -289,6 +290,100 @@ body {
 .about__button {
   padding-left: 30px;
   padding-right: 30px;
+}
+
+/* Pricing section */
+
+.prices {
+  background-color: var(--simple-background-color);
+  padding: 133px 0 163px;
+  text-transform: uppercase;
+}
+
+.prices .subtitle + .prices__list {
+  margin-top: 53px;
+}
+
+.prices__list {
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.price-card {
+  margin: 30px 0;
+  width: 33%;
+  background-color: var(--white-font-color);
+  font-family: var(--font-family-1);
+  font-weight: lighter;
+  padding: 53px 30px 47px;
+  border-radius: var(--common-border-radius);
+  border: 1px solid #ccd5df;
+}
+
+.price-card_highlight {
+  padding-top: 84px;
+  padding-bottom: 84px;
+  margin: 0;
+  background-color: var(--secondary-color);
+  color: var(--white-font-color);
+  border: 0;
+  width: calc(33% + 4px);
+  /* box-sizing: content-box; */
+  /* border: 31px solid var(--secondary-color); */
+}
+
+.price-card__highlight .price-card__title,
+.price-card_highlight .price-card__cost,
+.price-card_highlight .price-card__frequency,
+.price-card_highlight .price-card__adventages {
+  color: inherit;
+}
+
+.price-card__title {
+  font-size: 25px;
+  font-weight: inherit;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.price-card__cost {
+  margin: 0;
+  margin-bottom: 2px;
+  font-size: 60px;
+  font-weight: bold;
+  color: var(--primary-color);
+  line-height: 1;
+  margin-bottom: 31px;
+}
+
+.price-card__currency,
+.price-card__frequency {
+  font-weight: lighter;
+  margin: 0;
+}
+
+.price-card__frequency {
+  color: var(--main-font-color);
+  display: block;
+  font-size: 20px;
+}
+
+.price-card__adventages {
+  list-style-type: none;
+  color: #818b95;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 21px;
+}
+
+.price-card__adventage {
+  padding-top: 14px;
+  padding-bottom: 12px;
+  border-top: var(--simple-background-color) 1px solid;
 }
 
 /* Utils */
