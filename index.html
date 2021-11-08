@@ -18,12 +18,14 @@
   <body class="page-wrap" id="page-top">
     <header>
       <nav class="main-nav">
-        <div class="container main-nav__wrap">
+        <div class="container main-nav__wrap menu">
           <a href="/">
             <img src="/images/logo.png" alt="Company name" />
           </a>
 
-          <ul class="main-nav__list">
+          <button class="menu__toggle">свернуть меню</button>
+
+          <ul class="main-nav__list menu__dropdown">
             <li class="main-nav__item main-nav__item_active">
               <a href="#page-top" class="main-nav__link">Home</a>
             </li>
@@ -521,6 +523,7 @@
 
     <!-- Scripts -->
     <script type="text/javascript">
+      // Slider
       const autoPlayTimer = 4000;
       const sliderList = document.querySelector(".promo__slider .slider__list");
       const slides = document.querySelectorAll(".promo__slider .slider__item");
@@ -569,6 +572,18 @@
           slidesCounter++;
         }
         sliderList.after(sliderIndicators);
+      }
+
+      // Menu
+      const menu = document.querySelector(".menu");
+      const menuToggle = document.querySelector(".menu .menu__toggle");
+      const menuDropdown = document.querySelector(".menu .menu__dropdown");
+
+      menuToggle.addEventListener("click", toggleMenu);
+
+      function toggleMenu(event) {
+        event.preventDefault();
+        menu.classList.toggle("menu_opened");
       }
     </script>
   </body>
