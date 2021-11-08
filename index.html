@@ -43,7 +43,7 @@
               <a href="#clients" class="main-nav__link">Happy clients</a>
             </li>
             <li class="main-nav__item">
-              <a href="#contacts" class="main-nav__link">Contact</a>
+              <a href="#contacts" class="main-nav__link">Contact us</a>
             </li>
           </ul>
         </div>
@@ -54,12 +54,12 @@
         <div class="container">
           <b class="promo__title">Boost up your local business</b>
           <p class="promo__subtitle">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam
-            saepe error optio provident.
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum typesetting
           </p>
 
           <form class="promo__form form form_horizontal" method="post">
-            <p class="form__group">
+            <p class="form__group promo__field">
               <label class="sr-only" for="promo_name">Full Name</label>
               <i class="fas fa-user form__icon"></i>
               <input
@@ -70,7 +70,7 @@
                 placeholder="Full Name"
               />
             </p>
-            <p class="form__group">
+            <p class="form__group promo__field">
               <label class="sr-only" for="promo_email">Email Address</label>
               <i class="fas fa-envelope form__icon"></i>
               <input
@@ -81,7 +81,7 @@
                 placeholder="Email Address"
               />
             </p>
-            <p class="form__group">
+            <p class="form__group promo__field">
               <label class="sr-only" for="promo_phone">Phone Number</label>
               <i class="fas fa-phone-alt form__icon"></i>
               <input
@@ -92,7 +92,10 @@
                 placeholder="Phone Number"
               />
             </p>
-            <button class="button form__button button_primary" type="submit">
+            <button
+              class="promo__submit button form__button button_primary"
+              type="submit"
+            >
               Request a quote
             </button>
           </form>
@@ -127,9 +130,7 @@
       <div class="container">
         <section class="services" id="services">
           <h2 class="heading">Our Services</h2>
-          <p class="subtitle">
-            Lorem, ipsum dolor sit amet consectetur adipisicing.
-          </p>
+          <p class="subtitle">Lorem Ipsum is simply dummy Business industry.</p>
 
           <ul class="services__list">
             <li class="services__item services__item_highlight">
@@ -138,8 +139,7 @@
               <p class="services__desc">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Quibusdam numquam saepe deleniti assumenda consequuntur neque
-                reprehenderit aut qui officiis totam explicabo ut blanditiis
-                quis maiores, magni exercitationem.
+                reprehenderit aut qui officiis totam explicabo
               </p>
             </li>
             <li class="services__item">
@@ -197,10 +197,12 @@
       </div>
 
       <section class="about" id="about-us">
-        <img class="about__cover" src="/images/about.jpg" alt="" />
+        <div class="about__cover">
+          <img class="about__image" src="/images/about.jpg" alt="" />
+        </div>
         <div class="about__body">
           <h2 class="about__title heading">About us</h2>
-          <p class="about text">
+          <p class="about__text">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
@@ -218,7 +220,7 @@
 
       <section class="prices">
         <div class="container">
-          <h2 class="heading" id="pricing">Choose your price</h2>
+          <h2 class="heading" id="pricing">Choos your price</h2>
           <p class="subtitle">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis,
             eos?
@@ -290,44 +292,40 @@
               <span class="stepper__icon">
                 <i class="fas fa-headphones"></i>
               </span>
-              <h4>Step 1</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
-                molestias voluptatum perferendis suscipit totam esse possimus
-                vitae aliquid corrupti dolorum.
+              <h4 class="stepper__title">Step 1</h4>
+              <p class="stepper__desc">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                ind ustry. Lorem Ipsum has been
               </p>
             </li>
             <li class="stepper__item">
               <span class="stepper__icon">
                 <i class="fas fa-unlock"></i>
               </span>
-              <h4>Step 2</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
-                molestias voluptatum perferendis suscipit totam esse possimus
-                vitae aliquid corrupti dolorum.
+              <h4 class="stepper__title">Step 2</h4>
+              <p class="stepper__desc">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                ind ustry. Lorem Ipsum has been
               </p>
             </li>
             <li class="stepper__item">
               <span class="stepper__icon">
                 <i class="fas fa-cloud-upload-alt"></i>
               </span>
-              <h4>Step 3</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
-                molestias voluptatum perferendis suscipit totam esse possimus
-                vitae aliquid corrupti dolorum.
+              <h4 class="stepper__title">Step 3</h4>
+              <p class="stepper__desc">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                ind ustry. Lorem Ipsum has been
               </p>
             </li>
             <li class="stepper__item">
               <span class="stepper__icon">
                 <i class="far fa-thumbs-up"></i>
               </span>
-              <h4>Step 4</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
-                molestias voluptatum perferendis suscipit totam esse possimus
-                vitae aliquid corrupti dolorum.
+              <h4 class="stepper__title">Step 4</h4>
+              <p class="stepper__desc">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                ind ustry. Lorem Ipsum has been
               </p>
             </li>
           </ul>
@@ -348,12 +346,10 @@
                 <img src="/images/client1.jpg" alt="" class="feedback__image" />
               </div>
               <blockquote class="feedback__content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-                laudantium harum magni quis, laboriosam illo nam veritatis
-                voluptates neque distinctio nobis amet! Nesciunt facere eligendi
-                beatae deleniti qui nam necessitatibus, nobis eos officiis,
-                commodi veritatis ullam a sequi aut reiciendis. Reprehenderit
-                minus perferendis mollitia laboriosam.
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry standard dummy text
+                ever since the 1500s, when an unknown printer took a galley of
+                type and scrambled it to make.
               </blockquote>
               <p class="feedback__author">
                 <span class="feedback__author-name"> Darwin Michle, </span>
@@ -366,12 +362,10 @@
                 <img src="/images/client2.jpg" alt="" class="feedback__image" />
               </div>
               <blockquote class="feedback__content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-                laudantium harum magni quis, laboriosam illo nam veritatis
-                voluptates neque distinctio nobis amet! Nesciunt facere eligendi
-                beatae deleniti qui nam necessitatibus, nobis eos officiis,
-                commodi veritatis ullam a sequi aut reiciendis. Reprehenderit
-                minus perferendis mollitia laboriosam.
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry standard dummy text
+                ever since the 1500s, when an unknown printer took a galley of
+                type and scrambled it to make.
               </blockquote>
               <p class="feedback__author">
                 <span class="feedback__author-name"> Madam Elisabath, </span>
@@ -384,12 +378,10 @@
                 <img src="/images/client3.jpg" alt="" class="feedback__image" />
               </div>
               <blockquote class="feedback__content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-                laudantium harum magni quis, laboriosam illo nam veritatis
-                voluptates neque distinctio nobis amet! Nesciunt facere eligendi
-                beatae deleniti qui nam necessitatibus, nobis eos officiis,
-                commodi veritatis ullam a sequi aut reiciendis. Reprehenderit
-                minus perferendis mollitia laboriosam.
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry standard dummy text
+                ever since the 1500s, when an unknown printer took a galley of
+                type and scrambled it to make.
               </blockquote>
               <p class="feedback__author">
                 <span class="feedback__author-name"> Clips Arter, </span> Lipsum
@@ -402,12 +394,10 @@
                 <img src="/images/client4.jpg" alt="" class="feedback__image" />
               </div>
               <blockquote class="feedback__content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-                laudantium harum magni quis, laboriosam illo nam veritatis
-                voluptates neque distinctio nobis amet! Nesciunt facere eligendi
-                beatae deleniti qui nam necessitatibus, nobis eos officiis,
-                commodi veritatis ullam a sequi aut reiciendis. Reprehenderit
-                minus perferendis mollitia laboriosam.
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry standard dummy text
+                ever since the 1500s, when an unknown printer took a galley of
+                type and scrambled it to make.
               </blockquote>
               <p class="feedback__author">
                 <span class="feedback__author-name"> Zam Cristafr, </span>
@@ -425,7 +415,7 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing.
           </p>
           <form method="post" class="contacts__form form form_horizontal">
-            <p class="form__group">
+            <p class="form__group contacts__field_name">
               <label class="sr-only" for="contacts__name">Name</label>
               <i class="fas fa-user form__icon"></i>
               <input
@@ -436,7 +426,7 @@
                 placeholder="Name"
               />
             </p>
-            <p class="form__group">
+            <p class="form__group contacts__field_email">
               <label class="sr-only" for="contacts__email">Email Address</label>
               <i class="fas fa-envelope form__icon"></i>
               <input
@@ -447,7 +437,10 @@
                 placeholder="Email Address"
               />
             </p>
-            <button class="form__button button button_primary" type="submit">
+            <button
+              class="contacts__submit form__button button button_primary"
+              type="submit"
+            >
               Subscribe now
             </button>
           </form>
@@ -485,7 +478,7 @@
           <a href="#clients" class="footer-nav__link">Happy clients</a>
         </li>
         <li class="footer-nav__item">
-          <a href="#contacts" class="footer-nav__link">Contacts us</a>
+          <a href="#contacts" class="footer-nav__link">Contact us</a>
         </li>
       </ul>
 
