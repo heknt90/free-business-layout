@@ -811,9 +811,19 @@ body {
 }
 
 .footer-nav__list {
-  display: flex;
-  justify-content: center;
+  text-align: center;
   margin-bottom: 1.0769231em;
+}
+
+@media (min-width: 720px) {
+  .footer-nav__list {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-nav__item + .footer-nav__item {
+    margin-left: 2.69230769em;
+  }
 }
 
 .footer-nav__item {
@@ -822,8 +832,18 @@ body {
   text-transform: uppercase;
 }
 
-.footer-nav__item + .footer-nav__item {
-  margin-left: 2.69230769em;
+@media (max-width: 720px) {
+  .main-footer {
+    padding-top: 1.5em;
+  }
+
+  .footer-nav__item {
+    margin-bottom: 1em;
+  }
+
+  .main-footer .social__list {
+    margin-bottom: 1em;
+  }
 }
 
 .footer-nav__link {
