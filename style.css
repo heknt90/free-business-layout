@@ -63,6 +63,11 @@ body {
   padding-right: 1.153846rem;
 }
 
+.section {
+  padding-top: 3em;
+  padding-bottom: 2em;
+}
+
 .logo {
   display: block;
   width: 3.8462rem;
@@ -427,10 +432,6 @@ body {
 
 /* services */
 
-.services {
-  padding: 5em 0 6.30769231em;
-}
-
 .services__item {
   position: relative;
   margin-bottom: 4.5em;
@@ -464,11 +465,6 @@ body {
 }
 
 @media (max-width: 720px) {
-  .services {
-    padding-top: 3em;
-    padding-bottom: 2em;
-  }
-
   .services__list {
     margin-top: 2em;
   }
@@ -483,6 +479,10 @@ body {
 }
 
 @media (min-width: 720px) {
+  .services {
+    padding: 5em 0 6.30769231em;
+  }
+
   .services__list {
     display: flex;
     flex-wrap: wrap;
