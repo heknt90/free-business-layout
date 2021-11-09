@@ -508,14 +508,16 @@ body {
   position: relative;
   background-color: var(--primary-color);
   color: var(--white-font-color);
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-.about,
-.about__title {
+.about {
   text-align: left;
 }
 
 .about__cover {
+  display: none;
   width: 50%;
   height: 48.0769231rem;
   margin-left: auto;
@@ -530,14 +532,24 @@ body {
 }
 
 .about__body {
-  position: absolute;
   top: 0;
   bottom: 0;
   overflow: auto;
   left: 50%;
-  max-width: 45em;
-  padding-top: 12.5em;
-  padding-left: 6.15em;
+}
+
+@media (min-width: 720px) {
+  .about__body {
+    position: absolute;
+    max-width: 45em;
+    padding: 0;
+    padding-top: 12.5em;
+    padding-left: 6.15em;
+  }
+
+  .about__title {
+    text-align: left;
+  }
 }
 .about__text {
   line-height: 1.85;
