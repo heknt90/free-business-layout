@@ -431,26 +431,13 @@ body {
   padding: 5em 0 6.30769231em;
 }
 
-.services__list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 6.923076923em;
-}
-
 .services__item {
-  flex: 1 0 40%;
-  width: 50%;
-  padding-left: 6.230769231em;
   position: relative;
   margin-bottom: 4.5em;
 }
 
 .services__item_highlight > .services__icon {
   color: var(--primary-color);
-}
-
-.services__item:nth-child(2n) {
-  margin-left: 4.61538462em;
 }
 
 .services__name {
@@ -471,10 +458,49 @@ body {
 
 .services__icon {
   font-size: 3.46153846rem;
-  position: absolute;
   left: 0;
   top: 0;
   color: var(--secondary-color);
+}
+
+@media (max-width: 720px) {
+  .services {
+    padding-top: 3em;
+    padding-bottom: 2em;
+  }
+
+  .services__list {
+    margin-top: 2em;
+  }
+
+  .services__item {
+    margin-bottom: 2em;
+  }
+
+  .services__icon {
+    margin-bottom: 0.3em;
+  }
+}
+
+@media (min-width: 720px) {
+  .services__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 6.923076923em;
+  }
+
+  .services__item {
+    padding-left: 6.230769231em;
+    flex: 1 0 45%;
+  }
+
+  .services__item:nth-child(2n) {
+    margin-left: 4.61538462em;
+  }
+
+  .services__icon {
+    position: absolute;
+  }
 }
 
 /* About section */
