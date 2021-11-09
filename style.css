@@ -539,6 +539,14 @@ body {
 }
 
 @media (min-width: 720px) {
+  .about {
+    padding: 0;
+  }
+
+  .about__cover {
+    display: block;
+  }
+
   .about__body {
     position: absolute;
     max-width: 45em;
