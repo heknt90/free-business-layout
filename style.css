@@ -145,15 +145,6 @@ body {
   color: var(--form-font-color);
 }
 
-.form_horizontal {
-  display: flex;
-  justify-content: center;
-}
-
-.form_horizontal > *:not(:first-child) {
-  margin-left: 0.7692308em;
-}
-
 .form__icon {
   position: absolute;
   left: 1em;
@@ -180,10 +171,47 @@ body {
   border: 0.0769231em solid var(--form-font-color);
 }
 
+@media (max-width: 720px) {
+  .form {
+    display: block;
+    width: 280px;
+    margin: 0 auto;
+  }
+
+  .form__group {
+    margin-bottom: 1em;
+    width: 100%;
+  }
+
+  .form__button {
+    width: 100%;
+    margin-top: 1.5em;
+    height: 3em;
+  }
+}
+
+@media (min-width: 720px) {
+  .form_horizontal {
+    display: flex;
+    justify-content: center;
+  }
+
+  .form_horizontal > *:not(:first-child) {
+    margin-left: 0.7692308em;
+  }
+}
+
 /* Slider */
 .slider {
+  display: none;
   width: 100%;
   overflow: hidden;
+}
+
+@media (min-width: 720px) {
+  .slider {
+    display: block;
+  }
 }
 
 .slider__list {
@@ -342,12 +370,7 @@ body {
 
 .promo {
   padding: 8.15384615em 0 2.692307692307em;
-  background: linear-gradient(
-    to bottom,
-    var(--secondary-color) 81.4%,
-    var(--white-font-color) 18.6%
-  );
-
+  background-color: var(--secondary-color);
   color: var(--white-font-color);
   text-align: center;
 }
@@ -372,16 +395,33 @@ body {
 }
 
 .promo__form {
-  margin: 2.61538462em 0 5em;
-  margin-right: 0.61538462em;
+  margin-top: 2em;
 }
 
-.promo__field {
-  width: 21.5rem;
-}
+@media (min-width: 720px) {
+  .promo {
+    background: linear-gradient(
+      to bottom,
+      var(--secondary-color) 81.4%,
+      var(--white-font-color) 18.6%
+    );
+  }
 
-.promo__submit {
-  width: 16rem;
+  .promo__form {
+    margin: 2.61538462em 0 5em;
+  }
+
+  .promo__field {
+    width: 21.5rem;
+  }
+
+  .promo__submit {
+    width: 16rem;
+  }
+
+  .promo__form {
+    margin-right: 0.61538462em;
+  }
 }
 
 /* services */
@@ -736,21 +776,22 @@ body {
 }
 
 .contacts__form {
-  display: flex;
   margin-top: 2.84615385em;
   margin-bottom: 7.076923077em;
 }
 
-.contacts__field_name {
-  width: 23.6923077rem;
-}
+@media (min-width: 720px) {
+  .contacts__field_name {
+    width: 23.6923077rem;
+  }
 
-.contacts__field_email {
-  width: 29.84615385rem;
-}
+  .contacts__field_email {
+    width: 29.84615385rem;
+  }
 
-.contacts__submit {
-  width: 16.76923077rem;
+  .contacts__submit {
+    width: 16.76923077rem;
+  }
 }
 
 .contacts__content {
