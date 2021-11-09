@@ -369,7 +369,7 @@ body {
 /* Promo section */
 
 .promo {
-  padding: 8.15384615em 0 2.692307692307em;
+  padding: 2.692307692307em 0;
   background-color: var(--secondary-color);
   color: var(--white-font-color);
   text-align: center;
@@ -400,6 +400,7 @@ body {
 
 @media (min-width: 720px) {
   .promo {
+    padding-top: 8.15384615em;
     background: linear-gradient(
       to bottom,
       var(--secondary-color) 81.4%,
