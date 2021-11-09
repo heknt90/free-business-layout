@@ -877,18 +877,26 @@ body {
 /* Contacts section */
 
 .contacts {
-  padding: 11.615384615em 0 22em;
   background-image: url("/images/logo.png"), url("/images/map.jpg");
   background-position: center 52.3079231em, center 26.15384615em;
   background-repeat: no-repeat;
+  padding-bottom: 4em;
 }
 
 .contacts__form {
   margin-top: 2.84615385em;
-  margin-bottom: 7.076923077em;
+  margin-bottom: 3em;
 }
 
 @media (min-width: 720px) {
+  .contacts {
+    padding: 11.615384615em 0 22em;
+  }
+
+  .contacts__form {
+    margin-bottom: 7.076923077em;
+  }
+
   .contacts__field_name {
     width: 23.6923077rem;
   }
