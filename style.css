@@ -691,39 +691,28 @@ body {
 
 /* Instructions section */
 .instructions {
-  padding: 11.69230769em 0;
   text-align: center;
 }
 
 .instructions__steps {
-  margin-top: 5.7692307em;
+  margin-top: 3em;
+}
+
+@media (min-width: 720px) {
+  .instructions {
+    padding: 11.69230769em 0;
+  }
+
+  .instructions__steps {
+    margin-top: 5.7692307em;
+  }
 }
 
 /* Stepper */
 .stepper {
-  display: flex;
   margin-bottom: 5.76923077em;
   padding: 0 1.8461538462em;
   list-style-type: none;
-}
-
-.stepper__item {
-  position: relative;
-}
-
-.stepper__item + .stepper__item {
-  margin-left: 5.76923077em;
-}
-
-.stepper__item + .stepper__item::before {
-  content: " ";
-  display: block;
-  position: absolute;
-  left: -8.46153846em;
-  width: 10em;
-  height: 5.3846154em;
-  border-top: 0.15384615em dotted var(--secondary-color);
-  border-radius: 50%;
 }
 
 .stepper__icon {
@@ -732,7 +721,7 @@ body {
 }
 
 .stepper__title {
-  margin-top: 2.95em;
+  margin-top: 0.3em;
   margin-bottom: 0.55em;
   font-size: 1.53846154rem;
   font-family: var(--font-family-1);
@@ -741,6 +730,35 @@ body {
 
 .stepper__title + .stepper__desc {
   margin-top: 0.6em;
+}
+
+@media (min-width: 720px) {
+  .stepper {
+    display: flex;
+  }
+
+  .stepper__item {
+    position: relative;
+  }
+
+  .stepper__item + .stepper__item {
+    margin-left: 5.76923077em;
+  }
+
+  .stepper__item + .stepper__item::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    left: -8.46153846em;
+    width: 10em;
+    height: 5.3846154em;
+    border-top: 0.15384615em dotted var(--secondary-color);
+    border-radius: 50%;
+  }
+
+  .stepper__title {
+    margin-top: 2.95em;
+  }
 }
 
 /* Clients section */
