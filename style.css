@@ -962,7 +962,7 @@ body {
 /* Contacts section */
 
 .contacts {
-  background-image: url("/images/logo.png"), url("/images/map.jpg");
+  background-image: url("images/logo.png"), url("images/map.jpg");
   background-position: center 52.3079231em, center 26.15384615em;
   background-repeat: no-repeat;
   padding-bottom: 4em;
