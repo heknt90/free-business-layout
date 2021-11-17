@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 :root {
   --main-font-family: "Open Sans", sans-serif;
   --primary-color: #ffbb42;
@@ -18,6 +25,8 @@
 
   --common-border-radius: 0.1538em;
 
+  -webkit-box-sizing: border-box;
+
   box-sizing: border-box;
   font-family: var(--main-font-family);
   font-size: 13px;
@@ -27,6 +36,7 @@
 *,
 *::before,
 *::after {
+  -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
 
@@ -49,8 +59,15 @@ body {
 
 /* класс, опускающий футер вниз экрана */
 .page-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   min-height: 100vh;
 }
@@ -168,6 +185,22 @@ body {
   border-radius: var(--common-border-radius);
 }
 
+.form__control::-webkit-input-placeholder {
+  color: var(--main-font-color);
+}
+
+.form__control::-moz-placeholder {
+  color: var(--main-font-color);
+}
+
+.form__control:-ms-input-placeholder {
+  color: var(--main-font-color);
+}
+
+.form__control::-ms-input-placeholder {
+  color: var(--main-font-color);
+}
+
 .form__control::placeholder {
   color: var(--main-font-color);
 }
@@ -197,7 +230,11 @@ body {
 
 @media (min-width: 720px) {
   .form_horizontal {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
 
@@ -222,20 +259,30 @@ body {
 .slider__list {
   position: relative;
   left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 0;
   margin: 0;
+  -webkit-transition: left 0.6s;
+  -o-transition: left 0.6s;
   transition: left 0.6s;
   list-style-type: none;
 }
 
 .slider__item {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
   flex: 0 0 100%;
   text-align: center;
 }
 
 .slider__indicators {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   margin: 0;
   margin-top: 1.0769231em;
@@ -275,6 +322,8 @@ body {
 }
 
 .main-nav__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -300,6 +349,8 @@ body {
 
 @media (min-width: 720px) {
   .main-nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-left: auto;
     margin-top: 0.66666667em;
@@ -328,6 +379,8 @@ body {
   margin-left: auto;
   width: 1em;
   height: 1em;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
   align-self: center;
   background-color: var(--primary-color);
   border: none;
@@ -406,6 +459,18 @@ body {
 @media (min-width: 720px) {
   .promo {
     padding-top: 8.15384615em;
+    background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      color-stop(81.4%, var(--secondary-color)),
+      color-stop(18.6%, var(--white-font-color))
+    );
+    background: -o-linear-gradient(
+      top,
+      var(--secondary-color) 81.4%,
+      var(--white-font-color) 18.6%
+    );
     background: linear-gradient(
       to bottom,
       var(--secondary-color) 81.4%,
@@ -484,13 +549,18 @@ body {
   }
 
   .services__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin-top: 6.923076923em;
   }
 
   .services__item {
     padding-left: 6.230769231em;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 45%;
     flex: 1 0 45%;
   }
 
@@ -584,6 +654,8 @@ body {
 }
 
 .prices__list {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   text-align: center;
   text-transform: uppercase;
@@ -595,6 +667,8 @@ body {
   }
 
   .prices__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
 
@@ -734,6 +808,8 @@ body {
 
 @media (min-width: 720px) {
   .stepper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
 
@@ -779,11 +855,16 @@ body {
 
   .clients__list {
     margin-top: 4.46153846em;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
 
   .clients__item {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 40%;
     flex: 1 0 40%;
   }
 
@@ -839,6 +920,8 @@ body {
 
 .feedback__content::after {
   display: inline-block;
+  -webkit-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
   transform: scale(-1, 1);
   right: -0.66666667em;
   bottom: -0.8666666667em;
@@ -859,6 +942,8 @@ body {
 @media (max-width: 600px) {
   .feedback__photo {
     margin-left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
   }
 }
@@ -911,8 +996,15 @@ body {
 }
 
 .contacts__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   width: 21.5384615em;
   height: 21.5384615em;
@@ -920,6 +1012,8 @@ body {
 
   position: relative;
   left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
 
   background-color: var(--additional-font-color);
@@ -933,6 +1027,8 @@ body {
   position: absolute;
   bottom: -1.5384615em;
   left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   width: 0;
   height: 0;
@@ -974,7 +1070,11 @@ body {
 
 @media (min-width: 720px) {
   .footer-nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
 
@@ -1039,7 +1139,11 @@ body {
 .social__list {
   font-size: 1.3846154rem;
   margin-bottom: 2.5555555556em;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   color: var(--secondary-color);
 }
