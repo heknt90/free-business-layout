@@ -1,6 +1,6 @@
 # Верстка простой странички со слайдером
 
-[Демонстрация верстки](heknt90.github.io/free-business-layout/)
+[Демонстрация верстки](heknt90.github.io/free-business-layout/) |
 [Ссылка на макет](https://drive.google.com/file/d/1yxGaBszocTJXdXBt_jhAjwIWpe3j-ZvO/view?usp=sharing/)
 
 ![](cover.JPG/)
